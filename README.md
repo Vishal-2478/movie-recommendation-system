@@ -1,0 +1,181 @@
+# 🎬 Movie Recommendation System
+
+A Movie Recommendation System built using **Python, Streamlit, Scikit-learn, Pandas, NumPy, and SciPy** that recommends similar movies based on **Item-Based Collaborative Filtering** using the **K-Nearest Neighbors (KNN)** algorithm and **Cosine Similarity**.
+
+The application provides movie recommendations by analyzing historical user ratings from the MovieLens dataset.
+
+---
+
+## 🚀 Live Demo
+
+👉 Add your deployed Streamlit URL here
+
+Example:
+
+https://your-app-name.streamlit.app
+
+---
+
+## 📸 Screenshot
+
+> Add a screenshot of the application here.
+
+---
+
+## ✨ Features
+
+- 🎬 Search movies by title
+- 🤖 Item-Based Collaborative Filtering
+- 📊 K-Nearest Neighbors (KNN) recommendation engine
+- 📐 Cosine Similarity for finding similar movies
+- ⚡ Fast recommendations using Sparse Matrix representation
+- 🔍 Case-insensitive movie search
+- 🌐 Interactive Streamlit web interface
+- 📈 Top 10 similar movie recommendations
+
+---
+
+## 🛠️ Tech Stack
+
+- Python
+- Streamlit
+- Pandas
+- NumPy
+- SciPy
+- Scikit-learn
+
+---
+
+## 📂 Dataset
+
+This project uses the **MovieLens Latest Small Dataset**.
+
+Dataset contains:
+
+- 100,000+ Ratings
+- 9,700+ Movies
+- 600+ Users
+
+Source:
+
+https://grouplens.org/datasets/movielens/
+
+---
+
+## 🧠 Recommendation Algorithm
+
+This project uses **Item-Based Collaborative Filtering**.
+
+### Workflow
+
+1. Load MovieLens dataset
+2. Create a Movie-User Rating Matrix
+3. Replace missing ratings with 0
+4. Remove noisy movies and inactive users
+5. Convert the matrix into a Sparse Matrix (CSR)
+6. Train a KNN model using Cosine Similarity
+7. Retrieve Top 10 most similar movies
+
+---
+
+## 📊 Project Structure
+
+```
+Movie-Recommendation-System/
+│
+├── app.py
+├── movies.csv
+├── ratings.csv
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Movie-Recommendation-System.git
+```
+
+Go to the project directory
+
+```bash
+cd Movie-Recommendation-System
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📌 Future Improvements
+
+- Movie posters using TMDB API
+- Genre-based filtering
+- Hybrid Recommendation System
+- Personalized recommendations
+- User authentication
+- Recommendation history
+- Deep Learning based recommender
+
+---
+
+## 📈 Sample Output
+
+Input
+
+```
+Toy Story
+```
+
+Output
+
+```
+Toy Story 2
+Monsters Inc.
+Finding Nemo
+Shrek
+Bug's Life
+...
+```
+
+---
+
+## 💡 Learning Outcomes
+
+- Collaborative Filtering
+- Recommendation Systems
+- K-Nearest Neighbors (KNN)
+- Cosine Similarity
+- Sparse Matrix Optimization
+- Data Preprocessing
+- Streamlit Deployment
+
+---
+
+## 👨‍💻 Author
+
+**Vishal Mali**
+
+GitHub: https://github.com/YOUR_USERNAME
+
+LinkedIn: https://linkedin.com/in/YOUR_PROFILE
+
+---
+
+## ⭐ If you found this project useful
+
+Please consider giving it a ⭐ on GitHub.
