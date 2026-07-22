@@ -8,17 +8,14 @@ The application provides movie recommendations by analyzing historical user rati
 
 ## 🚀 Live Demo
 
-👉 Add your deployed Streamlit URL here
-
-Example:
-
-https://your-app-name.streamlit.app
+https://knn-movie-recommendation-system.streamlit.app/
 
 ---
 
 ## 📸 Screenshot
 
-> Add a screenshot of the application here.
+<img width="608" height="244" alt="image" src="https://github.com/user-attachments/assets/95873578-a87b-426d-aa5b-6c6b56f79086" />
+
 
 ---
 
@@ -98,7 +95,7 @@ Movie-Recommendation-System/
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Movie-Recommendation-System.git
+git clone https://github.com/Vishal-2478/movie-recommendation-system.git
 ```
 
 Go to the project directory
@@ -166,13 +163,6 @@ Bug's Life
 
 ---
 
-## 👨‍💻 Author
-
-**Vishal Mali**
-
-GitHub: https://github.com/YOUR_USERNAME
-
-LinkedIn: https://linkedin.com/in/YOUR_PROFILE
 
 ---
 
