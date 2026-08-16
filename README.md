@@ -80,10 +80,15 @@ This project uses **Item-Based Collaborative Filtering**.
 ```
 Movie-Recommendation-System/
 │
-├── app.py
+├── app.py                  # Streamlit UI
+├── recommender.py          # Data loading + KNN recommendation logic
+├── tests/
+│   ├── conftest.py
+│   └── test_recommender.py
 ├── movies.csv
 ├── ratings.csv
 ├── requirements.txt
+├── requirements-dev.txt
 ├── README.md
 └── .gitignore
 ```
@@ -115,6 +120,19 @@ Run the application
 ```bash
 streamlit run app.py
 ```
+
+---
+
+## 🧪 Tests
+
+Install the development dependencies and run the suite with coverage:
+
+```bash
+pip install -r requirements-dev.txt
+pytest
+```
+
+Coverage for `recommender.py` is reported automatically.
 
 ---
 
