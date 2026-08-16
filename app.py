@@ -19,6 +19,7 @@ RATINGS_FILE = DATA_DIR / "ratings.csv"
 MIN_MOVIE_RATINGS = 10
 MIN_USER_RATINGS = 50
 N_RECOMMENDATIONS = 10
+MAX_QUERY_LENGTH = 100
 
 
 class DataError(Exception):
@@ -122,6 +123,8 @@ def get_recommendation(movie_name, movies, matrix, csr_data, knn, n_neighbors):
         MovieNotFoundError: no title matches ``movie_name``.
         MovieNotRatedEnoughError: the matched movie was filtered out of the matrix.
     """
+    movie_name = movie_name.strip()[:MAX_QUERY_LENGTH]
+
     # regex=False so that titles containing regex metacharacters are matched literally
     matches = movies[
         movies["title"].str.contains(movie_name, case=False, na=False, regex=False)
@@ -176,7 +179,9 @@ except DataError as exc:
 st.markdown("---")
 
 movie_name = st.text_input(
-    "Enter Movie Name", placeholder="Example: Batman, Toy Story, Avatar"
+    "Enter Movie Name",
+    placeholder="Example: Batman, Toy Story, Avatar",
+    max_chars=MAX_QUERY_LENGTH,
 )
 
 if st.button("🎬 Recommend"):
